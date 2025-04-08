@@ -1,0 +1,97 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 6px 30px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+/* li:nth-of-type(1) {
+    background-color: blue;
+    color: #fff;
+} */
+
+
+/* li:first-child{
+    background-color: yellow;
+} */
+/* li:nth-child(1) {
+    background-color: blue;
+    color: #fff;
+}
+
+li:nth-child(2) {
+    background-color: green;
+    color: #fff;
+}
+
+li:nth-child(3) {
+    background-color: yellow;
+    color: #020202;
+}
+
+li:nth-child(4) {
+    background-color: green;
+    color: #fff;
+}
+
+li:last-child {
+    background-color: rgb(8, 8, 7);
+    color: #fff;
+} */
+/* 
+li:nth-child(3n+4) {
+    background-color: blue;
+    color: #fff;
+} */
+
+/* li:nth-child(2n){
+    background-color: rgba(179, 255, 0, 0.888);
+    color: #030000;
+} */
+
+/* li:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+} */
+
+/* 
+input:focus{
+    background-color: #0d0909;
+    border: none;
+    outline: 3px red solid;
+} */
+/* 
+button {
+    cursor: pointer;
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 35px;
+    border-radius: 7px;
+    border: 1px solid blueviolet;
+    box-shadow: 1px 1px 5px 2px violet;
+    transition: all .2s;
+} */
+
+/* button:hover {
+    background-color: violet;
+    border-color: violet;
+}
+
+button:focus {
+    background-color: tomato;
+    border-color: tomato;
+}
+
+button:active {
+    box-shadow: none;
+    background-color: #000;
+    border-color: #000;
+} */
