@@ -1,0 +1,27 @@
+.flex-container {
+    height: 600px;
+    border: 5px solid red;
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*
+    flex-direction: row-reverse;
+    justify-content: end; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center;
+    align-items: baseline; */
+}
+
+.flex-item {
+    width: 250px;
+    height: 100px;
+    background: #000;
+    color: #fff;
+    padding: 30px;
+    /* margin: 30px; */
+    font-size: 30px;
+}
