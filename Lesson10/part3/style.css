@@ -1,0 +1,73 @@
+.wrapper {
+    max-width: 1000px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+h2,
+p {
+    margin: 0;
+}
+
+.card {
+    width: 315px;
+    height: 200px;
+    min-width: 300px;
+    background-color: #8e44ad;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+#imgchip {
+    width: 50px;
+    padding-top: 35px;
+    margin-left: -5px;
+}
+
+.card-num {
+    font-size: 25px;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+.card-name {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.down {
+    display: flex;
+    justify-content: space-between;
+}
+
+#visa {
+    width: 100px;
+    height: 35px;
+    margin-top: -10px;
+    margin-right: 20px;
+}
+
+.date p:first-child {
+    font-size: 9px;
+}
+
+.date p {
+    font-family: 'Tahoma', sans-serif;
+}
+
+.card:nth-child(2) {
+    background-color: green;
+}
+.card:nth-child(3) {
+    background-color: blueviolet;
+}
+.card:nth-child(4) {
+    background-color: black;
+}
