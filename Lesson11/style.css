@@ -41,13 +41,20 @@ header {
 
 main {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 article {
+    width: calc(100%/3);
+    padding-inline: 15px;
+}
+
+article>div {
+    padding: 30px;
     text-align: center;
     border: 1px solid #e9ecef;
-    padding: 30px;
+    margin-bottom: 7rem;
 }
 
 article img {
@@ -66,4 +73,19 @@ article h4 {
 .position {
     color: #adb5bd;
     margin-bottom: 1rem;
+}
+
+/* palshet */
+@media screen and (max-width: 990px) {
+    article {
+        width: 50%;
+    }
+}
+
+/* modile & planshet*/
+
+@media screen and (max-width: 768px) {
+    article {
+        width: 100%;
+    }
 }
