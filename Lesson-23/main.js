@@ -220,5 +220,5 @@
 // search()
 // startWith()
 // trim()
-// reaplace | ...all()
+// replace | ...all()
 
