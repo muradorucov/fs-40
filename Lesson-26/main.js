@@ -80,6 +80,31 @@
 //     console.log(a);
 // }
 
-
-
+// let a = "test"
+// a.length
 // "12321" "ata" "ana" ""
+
+let value = "kelek";
+// value.split("").reverse().join()
+// let result = "Palendrom deyerdir!"
+// let reverseText = "";
+// for (let i = value.length - 1; i >= 0; i--) {
+//     reverseText += value[i]
+// }
+
+// if (reverseText !== value) {
+//     result = "Palendrom deyil!"
+// }
+
+// console.log(result);
+
+
+for (let i = 0; i < value.length; i++) {
+
+    if (value[i] !== value[value.length - 1 - i]) {
+        result = "Palendrom deyil!"
+        break;
+    }
+}
+
+console.log(result);
