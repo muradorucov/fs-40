@@ -1452,7 +1452,90 @@ const client = {
 
 // -1000
 // 1200
-200
+// 200
+
+
+// const calc = {
+//     memory: 0,
+//     vurma(a, b) {
+//         return a * b
+//     },
+//     çıxma(a, b) {
+//         return a - b
+//     },
+//     bölmə(a, b) {
+//         return a / b
+//     },
+//     toplama(a, b) {
+//         return a + b
+//     },
+//     read() {
+//         return this.memory
+//     },
+//     clear() {
+//         this.memory = 0
+//     },
+//     save(value) {
+//         this.memory = value
+//     }
+// }
 
 
 
+
+// calc.save(calc.bölmə(10, 40))
+// console.log(calc.read());
+// calc.clear()
+
+
+function mostFrequent(str) {
+    let arr = str.split(", ");
+    const obj = {}
+    arr.forEach(item => {
+        if (obj[item]) {
+            obj[item]++
+        } else {
+            obj[item] = 1
+        }
+    });
+
+    let max = 0;
+    let result;
+    for (const key in obj) {
+
+        if (obj[key] > max) {
+            max = obj[key]
+            result = key
+        }
+    }
+
+    console.log(Object.values(obj));
+    // console.log(Object.);
+
+
+    return result
+}
+
+console.log(mostFrequent("1, 3, 2, 3, 4, 3, 4, 5, 4, 1, 3"));
+
+
+
+// function mostFrequent(str) {
+//     return str.split(", ").reduce((acc, val) => {
+//         acc.map[val] = (acc.map[val] || 0) + 1;
+//         if (acc.map[val] > acc.maxCount) {
+//             acc.maxCount = acc.map[val];
+//             acc.result = val;
+//         }
+//         return acc;
+//     }, {
+//         map: {},
+//         maxCount: 0,
+//         result: null
+//     });
+// }
+
+
+
+
+// console.log(mostFrequent("1, 3, 2, 3, 4, 3, 4, 5, 4, 1, 3"));
