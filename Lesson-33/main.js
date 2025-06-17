@@ -1488,35 +1488,35 @@ const client = {
 // calc.clear()
 
 
-function mostFrequent(str) {
-    let arr = str.split(", ");
-    const obj = {}
-    arr.forEach(item => {
-        if (obj[item]) {
-            obj[item]++
-        } else {
-            obj[item] = 1
-        }
-    });
+// function mostFrequent(str) {
+//     let arr = str.split(", ");
+//     const obj = {}
+//     arr.forEach(item => {
+//         if (obj[item]) {
+//             obj[item]++
+//         } else {
+//             obj[item] = 1
+//         }
+//     });
 
-    let max = 0;
-    let result;
-    for (const key in obj) {
+//     let max = 0;
+//     let result;
+//     for (const key in obj) {
 
-        if (obj[key] > max) {
-            max = obj[key]
-            result = key
-        }
-    }
+//         if (obj[key] > max) {
+//             max = obj[key]
+//             result = key
+//         }
+//     }
 
-    console.log(Object.values(obj));
-    // console.log(Object.);
+//     console.log(Object.values(obj));
+//     // console.log(Object.);
 
 
-    return result
-}
+//     return result
+// }
 
-console.log(mostFrequent("1, 3, 2, 3, 4, 3, 4, 5, 4, 1, 3"));
+// console.log(mostFrequent("1, 3, 2, 3, 4, 3, 4, 5, 4, 1, 3"));
 
 
 
