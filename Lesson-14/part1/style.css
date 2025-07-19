@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    color: #999;
+    font-weight: 400;
+    line-height: 1.8;
+    font-style: normal;
+    background-color: #f8f8f8;
+}
+
+h2,
+h3 {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+section {
+    padding: 50px 0;
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1320px;
+
+    header {
+        text-align: center;
+        margin-bottom: 4rem;
+
+        .sub-title {
+            margin-bottom: 5px;
+            color: #ffa62b;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 54px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        margin-inline: -15px;
+
+
+        article {
+            width: calc(100%/3);
+            padding-inline: 15px;
+            margin-bottom: 30px;
+
+            .blog-card {
+                box-shadow: 0px 10px 25px -13px rgba(0, 0, 0, 0.1);
+                border-radius: 4px;
+                background-color: #fff;
+
+                .card-header {
+                    display: block;
+                    height: 300px;
+                    position: relative;
+
+                    img {
+                        height: 100%;
+                    }
+
+                    .date {
+                        position: absolute;
+                        background-color: #3d424a;
+                        padding: 20px;
+                        bottom: 0;
+                        left: 20px;
+                        text-align: center;
+                        color: #fff;
+
+                        .day {
+                            font-size: 30px;
+                            display: block;
+                            line-height: 1.2;
+                            margin-bottom: -10px;
+
+                        }
+
+                        .month {
+                            text-transform: uppercase;
+                            font-size: 0.875em;
+                        }
+                    }
+                }
+
+                .card-body {
+                    padding: 30px;
+
+                    .meta {
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: #ffa62b;
+                        margin-bottom: 16px;
+
+                        i {
+                            margin-right: 0.25rem;
+                        }
+
+                        span:first-child {
+                            margin-right: 10px;
+
+                            span {
+                                color: #999;
+                            }
+                        }
+                    }
+
+                    h3 {
+                        font-size: 24px;
+                        font-weight: 400;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            color: #ffa62b;
+                        }
+                    }
+
+                    p{
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+
+    }
+}

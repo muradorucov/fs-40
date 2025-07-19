@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    color: gray;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+/***** Teachres *****/
+.section-heading-h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1.8rem;
+    color: #000;
+}
+
+.teach-card {
+    border: 1px solid #e9ecef;
+    padding: 30px;
+    margin-top: 7rem;
+}
+
+.teach-card img {
+    width: 50%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: -100px;
+}
+
+.teach-name {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+}
+
+.teach-info {
+    margin-top: 14px;
+}
+
+/***** End Teachres *****/

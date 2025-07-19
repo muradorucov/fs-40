@@ -1,0 +1,66 @@
+::selection {
+    background-color: black;
+    color: #fff;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: #939393;
+    line-height: 1.6;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+header {
+
+    padding-block: 20px;
+
+    .logo {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000;
+
+        span {
+            color: #407BFF;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .menu {
+        padding-left: 40px;
+
+        &>li {
+            position: relative;
+
+            a {
+                font-size: 14px;
+                padding: 10px 15px;
+            }
+
+            .sub-menu {
+                position: absolute;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s;
+                width: 200px;
+                padding: 20px 0;
+                box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
+                top: 40px;
+            }
+
+
+            &:hover {
+                .sub-menu {
+                    opacity: 1;
+                    visibility: visible;
+                    top: 30px;
+                }
+            }
+        }
+    }
+}

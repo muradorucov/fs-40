@@ -99,12 +99,25 @@ let value = "kelek";
 // console.log(result);
 
 
-for (let i = 0; i < value.length; i++) {
+// for (let i = 0; i < value.length; i++) {
 
-    if (value[i] !== value[value.length - 1 - i]) {
-        result = "Palendrom deyil!"
-        break;
-    }
-}
+//     if (value[i] !== value[value.length - 1 - i]) {
+//         result = "Palendrom deyil!"
+//         break;
+//     }
+// }
 
-console.log(result);
+// console.log(result);
+
+
+let text = "lorem Dunya";
+// for (let i = 0; i < text.length; i++) {
+//     console.log(text[i]);
+// }
+// for (let i in text) {
+//     console.log(text[i]);
+// }
+
+// for (let i of text) {
+//     console.log(i);
+// }

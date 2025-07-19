@@ -1,0 +1,19 @@
+@media screen and (max-width:990px) {
+    section {
+        main {
+            article {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    section {
+        main {
+            article {
+                width: 100%;
+            }
+        }
+    }
+}

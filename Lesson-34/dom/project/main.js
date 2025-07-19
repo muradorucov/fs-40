@@ -117,7 +117,7 @@ const products = [
     "images": [
       "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp"
     ],
-    "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp"
+    "thumbnail": "https://cdn.dummyjedfefefson.com/product-images/beauty/eyeshadow-palette-with-mirror/thuefefefmbnail.webp"
   },
   {
     "id": 3,
@@ -1797,14 +1797,16 @@ const products = [
   }
 ]
 const productsElem = document.querySelector("#products")
-
 products.forEach((product) => {
   productsElem.innerHTML += `
   <div class="border-md rounded-md shadow-md p-[30px]">
       <img src="${product.thumbnail}" alt=""
+      onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/a/a3/Image-not-found.png?20210521171500'"
         class="h-[250px] object-cover">
       <h2>${product.title}</h2>
       <p>${product.price} AZN</p>
     </div>
   `
 })
+
+

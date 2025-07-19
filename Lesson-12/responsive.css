@@ -1,0 +1,45 @@
+@media screen and (max-width: 990px) {
+    main {
+        flex-direction: column;
+
+        aside {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        section {
+            width: 100%;
+
+            article {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        display: flex;
+        justify-content: end;
+
+        ul {
+            display: none;
+        }
+
+        .menu-btn {
+            display: block;
+            margin-right: 7rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        section {
+            article {
+                width: 100%;
+            }
+        }
+    }
+}

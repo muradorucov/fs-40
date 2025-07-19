@@ -1,0 +1,55 @@
+/*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 7rem;
+    align-items: center;
+    padding-block: 2rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+
+    }
+}
+
+header {
+    height: 100vh;
+    background-image: url("https://preview.colorlib.com/theme/oneschool/images/hero_1.jpg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #343a40;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    width: 80%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} */
