@@ -6,7 +6,6 @@ export const getAllCompanies = async () => {
   if (!res.data) {
     throw new Error("Get All Companies fetch Error");
   }
-  console.log("All Fetch bitdi");
   return res.data
 }
 

@@ -1,8 +1,10 @@
+import { useNavigate } from 'react-router';
 import DeleteIcon from '../../icons/delete'
 import EditIcon from '../../icons/edit'
 import { deleteCompany } from '../../services';
 
 function CompanyCard({ companyName, contactName, contactTitle, id, up, setUp }) {
+  const navigate = useNavigate();
 
   const _deleteCompnay = async () => {
     try {
@@ -26,7 +28,8 @@ function CompanyCard({ companyName, contactName, contactTitle, id, up, setUp }) 
           onClick={_deleteCompnay}>
           <DeleteIcon />
         </button>
-        <button className='cursor-pointer'>
+        <button className='cursor-pointer'
+          onClick={() => navigate(`/update/${id}`)}>
           <EditIcon />
         </button>
       </div>

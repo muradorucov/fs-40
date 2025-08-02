@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
   Dialog,
   DialogPanel,
@@ -13,7 +13,13 @@ import { Link } from 'react-router'
 
 
 export default function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [user, setUser] = useState({})
+  useEffect(() => {
+    setUser(JSON.parse(localStorage.getItem("user")))
+  })
+
+
 
   return (
     <header className="bg-white">
@@ -47,9 +53,9 @@ export default function Navbar() {
           </Link>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link to="/login" className="text-sm/6 font-semibold text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </Link>
+          <div className="py-6 h-[50px] w-[50px] ">
+            <img src={user.avatar} alt=""  className='w-full rounded-[50%]'/>
+          </div>
         </div>
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -91,12 +97,7 @@ export default function Navbar() {
 
               </div>
               <div className="py-6">
-                <Link
-                  to="/login"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </Link>
+                <img src={user.avatar} alt="" />
               </div>
             </div>
           </div>
