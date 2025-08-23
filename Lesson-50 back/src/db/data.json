@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "3d72ea16-1de5-4e67-b895-4065efe82d2d",
+      "name": "test",
+      "isActive": true
+    },
+    {
+      "id": "684b4089-a8db-4414-bda8-3a207acc437d",
+      "name": "umid",
+      "isActive": true
+    },
+    {
+      "id": "e197daa1-f273-4429-bb1a-9a1fbe028197",
+      "name": "sanan",
+      "isActive": true
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "userId": 2,
+      "content": "This is the content of Post_1",
+      "file": "post_1.png"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "content": "This is the content of Post_2",
+      "file": "post_2.png"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "content": "This is the content of Post_3",
+      "file": "post_3.png"
+    }
+  ]
+}
